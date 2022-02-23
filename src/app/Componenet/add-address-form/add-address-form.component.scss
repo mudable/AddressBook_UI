@@ -1,0 +1,178 @@
+body {
+    background: white;
+}
+
+img {
+    height: 2.5cm;
+    width: 2.5cm;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0%;
+    justify-content: left;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+    margin-top: 0%;
+}
+
+.header-text {
+    font: normal normal bold 25px/30px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: deepskyblue;
+    text-transform: capitalize;
+    margin-top: 1cm;
+}
+
+.headet-text-book {
+    text-align: left;
+    margin-left: 4%;
+    margin-top: 1%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.header {
+    padding: 15px 0;
+    border-color: rgb(199, 240, 234);
+}
+
+.form-content {
+    min-height: 100vh;
+    background-color: rgb(242, 244, 247);
+    display: flex;
+    width: 120%;
+    flex-direction: column;
+}
+
+.details {
+    width: 44.68%;
+    background-color: white;
+    min-height: 80vh;
+    margin-left: 28%;
+    margin-top: 0%;
+    border-radius: 0.1cm;
+}
+
+.header-content {
+    min-height: 2cm;
+    align-items: center;
+    padding: 2px 2px 7px 7px;
+    padding-left: 3.8cm;
+    color: white;
+    text-align: center;
+    border-radius: 0.1cm;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    width: 15cm;
+    background-color: rgba(0, 191, 255, 0.89);
+    margin-top: 0%;
+}
+
+.input {
+    width: 88%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    opacity: 1;
+    padding: 16px 12px;
+    height: 1cm;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding-right: 0px;
+}
+
+.row-content {
+    margin-left: 10%;
+    color: gray;
+}
+
+.input1 {
+    width: 17vh;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e5e6e2;
+    border-radius: 3px;
+    opacity: 1;
+    padding: 16px 12px;
+    height: 1cm;
+}
+
+.text {
+    color: black;
+}
+
+.column-con {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.column-content {
+    flex: 2;
+    flex-wrap: wrap;
+}
+
+.form-head-image {
+    height: 1cm;
+    width: 1cm;
+    margin-left: 2.4cm;
+    border-radius: 2mm;
+}
+
+.label text {
+    color: black;
+}
+
+.profile {
+    margin-left: 25px;
+}
+
+.profile-text {
+    margin-left: 1.5cm;
+}
+
+.pic {
+    height: 1.2cm;
+    width: 1.2cm;
+}
+
+.label-text {
+    margin-left: 0.1cm;
+    color: black;
+}
+
+.radio-button {
+    margin-left: 20px;
+}
+
+.radio-butt {
+    margin-left: 20px;
+}
+
+.submit-button {
+    height: 1.1cm;
+    width: 2.7cm;
+    font-weight: bolder Montserrat;
+    background-color: rgb(2, 194, 2);
+    border-radius: 2mm;
+    margin-left: 1.5cm;
+}
+
+.updateButton {
+    height: 1.1cm;
+    width: 2.7cm;
+    font-weight: bolder Montserrat;
+    background-color: rgb(2, 194, 2);
+    border-radius: 2mm;
+    margin-left: 1.5cm;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>ADDRESSBook App</title>
+</head>
+<body>
+  <header class="header-content header">
+    <div class="logo-content">
+      <img src="../../../assets/logo.png" alt="logo">
+      <div>
+        <span class="emp-text">Address</span><br>
+        <span class="emp-text emp-payroll">Book</span>
+      </div>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="header-content employee-header">
+      <div class="emp-detail-text">
+      AddressBook Details
+        <div class="emp-count">10</div>
+      </div>
+      <a class="add-button"  routerLink="/addForm">
+        <!-- <img src="./assets/icons/plus_symbol.svg" alt=""> -->
+        Add User
+      </a>
+      </div>
+      <div class="table-main">
+        <table id="display" class="table">
+            <tr>
+             <th>PersonId</th>
+                <th>FName</th>
+                <th>LName</th>
+                <th>Gender</th>
+                <!-- <th>profilePic</th> -->
+                <th>phoneNum</th>
+                <th>Email</th>
+            <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Address</th>
+                
+            </tr>
+           <tr *ngFor="let  Person of PersonData.data">
+                    <td>{{ Person.id}}</td>
+                    <td>{{ Person.fname }}</td>
+                    <td>{{ Person.lname}}</td>
+                    <td>{{ Person.gender }}</td>
+                    <!-- <td>
+                      <img class="profile" src={{ Person.profilePic}} alt="">
+                  </td>
+                    -->
+                    <td>{{ Person.phoneNumber}}</td>
+                    <td> {{ Person.emailAddress }}</td>
+                  
+                    <td>{{ Person.city}}</td>
+                    <td>{{ Person.state}}</td>
+                      <td>{{ Person.country}}</td>
+                      <td>{{ Person.address}}</td>
+    
+                    <td>
+                <img id="1" alt="delete" (click)="deletePerson(Person.id)"  onclick="remove(this)" src="../../../assets/icons/delete-black-18dp.svg">
+                    <img id="1" alt="edit" src="../../../assets/icons/create-black-18dp.svg"  (click)="updatePerson(Person.id)" >
+                </td>
+            </tr>
+        </table>
+    </div>
+  </div>
+  </body>
+</html>
